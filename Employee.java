@@ -1,18 +1,34 @@
-public class Employee{
-    int id;
-    String firstName;
-    String lastName;
-    String address;
+class Employee {
 
-    public Employee(String firstName,String lastName){
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-    public String getfullName(){
-        return firstName +' '+ lastName;
-    }
-    public static void main(String[] args){
-        Employee person = new Employee("kyatham","Rithwik");
-        System.out.println("FullName:"+person.getfullName());
-    }
+	protected int id;
+	protected String firstName;
+	protected String lastName;
+	protected String address;
+	
+	public Employee(){}
+	
+	public Employee(int id, String firstName, String lastName, String address) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.address = address;
+	}
+	
+	public String getFullName(){
+		return firstName+" "+lastName;
+	}
+	
+	public void sendMessage(){
+		System.out.println("Salary added successfully...");
+	}	
 }
+
+
+class FullTimeEmployee extends Employee{
+	
+	private double basic;
+	private double bonus;
+
+	public FullTimeEmployee(){
+  }

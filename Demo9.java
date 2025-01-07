@@ -1,34 +1,32 @@
 public class Demo9 {
-    public class UnaryOperations {
 
-        public static void main(String[] args) {
-            // Declare variables
-            int number = 10;
-            boolean condition = true;
+    public static void main(String[] args) {
+        // Declare variables
+        int a = 5;
+        int b = -10;
+        boolean flag = true;
 
-            // Unary Plus (+)
-            int positive = +number;
-            System.out.println("Unary Plus: " + positive);
+        // Unary Plus: Positive value (or it does nothing for positive numbers)
+        System.out.println("Unary plus of a: " + (+a));
 
-            // Unary Minus (-)
-            int negative = -number;
-            System.out.println("Unary Minus: " + negative);
+        // Unary Minus: Negates the value
+        System.out.println("Unary minus of a: " + (-a));
 
-            // Increment (++)
-            System.out.println("Original number: " + number);
-            System.out.println("Post-increment: " + (number++)); // Use, then increment
-            System.out.println("After Post-increment: " + number);
-            System.out.println("Pre-increment: " + (++number)); // Increment, then use
+        // Increment Operator (Pre-increment)
+        System.out.println("Pre-increment of a: " + (++a));
 
-            // Decrement (--)
-            System.out.println("Original number: " + number);
-            System.out.println("Post-decrement: " + (number--)); // Use, then decrement
-            System.out.println("After Post-decrement: " + number);
-            System.out.println("Pre-decrement: " + (--number)); // Decrement, then use
+        // Decrement Operator (Pre-decrement)
+        System.out.println("Pre-decrement of a: " + (--a));
 
-            // Logical Complement (!)
-            System.out.println("Original condition: " + condition);
-            System.out.println("Logical Complement: " + !condition);
-        }
-    }
+        // Post-increment
+        System.out.println("Post-increment of a: " + (a++));
+        System.out.println("Value of a after post-increment: " + a);
+
+        // Post-decrement
+        System.out.println("Post-decrement of a: " + (a--));
+        System.out.println("Value of a after post-decrement: " + a);
+
+        // Logical complement: Negates a boolean value
+        System.out.println("Logical complement of flag: " + (!flag));
+    }
 }

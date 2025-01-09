@@ -1,14 +1,16 @@
-public class Demo20 {
+public class Demo21 {
     public static void main(String[] args) {
-            int n = 10;
-            int first = 0, second = 1;
-    
-            System.out.println("Fibonacci Series up to " + n + " terms:");
-            for (int i = 1; i <= n; i++) {
-                System.out.print(first + " ");
-                int nextTerm = first + second;
-                first = second;
-                second = nextTerm;
+        int n = 30; 
+        for (int i = 1; i <= n; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                 System.out.println("FizzBuzz");
+                } else if (i % 3 == 0) {
+                    System.out.println("Fizz");
+                } else if (i % 5 == 0) {
+                    System.out.println("Buzz");
+                } else {
+                    System.out.println(i);
+                }
             }
         }
-    } 
+    }

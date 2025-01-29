@@ -26,11 +26,11 @@ public class LTCode005 {
         int[] nums2 = {3, 2, 4};
         int target2 = 6;
         int[] result2 = twoSum(nums2, target2);
-        System.out.println("Output: [" + result2[0] + ", " + result2[1] + "]"); // Output: [1, 2]
+        System.out.println("Output: [" + result2[0] + ", " + result2[1] + "]");
 
         int[] nums3 = {3, 3};
         int target3 = 6;
         int[] result3 = twoSum(nums3, target3);
-        System.out.println("Output: [" + result3[0] + ", " + result3[1] + "]"); // Output: [0, 1]
+        System.out.println("Output: [" + result3[0] + ", " + result3[1] + "]");
     }
 }

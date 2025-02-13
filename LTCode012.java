@@ -22,11 +22,5 @@ public class LTCode012 {
         System.out.println("Longest Common Prefix: " + solution.longestCommonPrefix(strs1));
         String[] strs2 = {"dog", "racecar", "car"};
         System.out.println("Longest Common Prefix: " + solution.longestCommonPrefix(strs2));
-        String[] strs3 = {"interstellar", "internet", "intermediate"};
-        System.out.println("Longest Common Prefix: " + solution.longestCommonPrefix(strs3)); 
-        String[] strs4 = {""};
-        System.out.println("Longest Common Prefix: " + solution.longestCommonPrefix(strs4));
-        String[] strs5 = {"", "hello", "world"};
-        System.out.println("Longest Common Prefix: " + solution.longestCommonPrefix(strs5));
     }
 }
